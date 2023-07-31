@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Mio Portfolio</title>
+    <STyle>
+.portfolio {
+    display: flex;
+    gap: 20px; /* Spazio tra le card */
+}
+
+    </STyle>
     <!-- Link a Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -30,7 +37,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <header class="hero bg-primary text-white text-center py-5">
         <div class="container">
@@ -52,36 +58,43 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Portfolio</h2>
-            <div class="card" style="width: 18rem;">
-              <img src="tkinter.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Tkinter</h5>
-                <p class="card-text">Questi sono alcuni degli esercizi che ho fatto con base tkinter.</p>
-                <a href="https://github.com/Drgsly97/CorsoFullStack/blob/master/flask/esercizi/es4/base.py" class="btn btn-primary">Go somewhere</a>
-              </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tkinter</h5>
+              <p class="card-text">Questo è un lavoro che ho fatto su tkinter,è la creazione di una macchinetta del caffè.</p>
+              <a href="https://github.com/Drgsly97/CorsoFullStack/blob/master/flask/esercizi/es4/base.py" class="btn btn-primary">Scopriamolo</a>
             </div>
-                        <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
             </div>
-                        <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <!-- Aggiungi qui i tuoi progetti con immagini e descrizioni -->
         </div>
-    </section>
+        <div class="col-md-4">
+          <div class="card h-100">  
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flask</h5>
+              <p class="card-text">Un mio progetto in Flask dove ho creato un sito per l ordinazione di cibo.</p>
+              <a href="https://github.com/Drgsly97/CorsoFullStack/blob/master/flask/esercizi/es2/base.py" class="btn btn-primary">Scopriamolo</a>
+            </div>
+            <div class="card-footer">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <a href="https://github.com/Drgsly97/CorsoFullStack/blob/master/flask/esercizi/es4/base.py" class="btn btn-primary">Scopriamolo</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
